@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #f637ec;
+  --primary-white: #fff;
+  --bg-black: #151515;
+  --bg-grey: #292929;
+  --bg-white: #FCEFFB;
+  --font: "Montserrat", sans-serif;
+}
+
+body {
+  max-width: 1300px;
+  margin: 0 auto;
+  background-color: var(--bg-black);
+  color: var(--primary-white);
+  font-family: var(--font);
+}
+
+/* navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem auto;
+}
+.navbar-items {
+  display: flex;
+  list-style: none;
+  gap: 3rem;
+}
+
+.nav-btn {
+  background-color: var(--bg-black);
+  color: var(--primary-white);
+  border: none;
+  font-size: 1rem;
+  padding: 0.25rem 2rem;
+}
+
+/* hero section */
+.hero {
+  background-image: url("./Assets/Photos/backCards.png"),
+    url("./Assets/Photos/frontCards.png");
+  background-position: 420px -80px, 620px 0px;
+  height: 95vh;
+  background-repeat: no-repeat;
+  margin-bottom: 3rem;
+}
+
+.hero-heading {
+  font-size: 5rem;
+  padding-right: 15rem;
+  padding-top: 3rem;
+}
+.hero-heading > span {
+  font-weight: 900;
+}
+.hero-p {
+  margin: 3rem 0;
+  padding-right: 50%;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  opacity: 0.6;
+}
+.hero-btn {
+  background-color: var(--bg-black);
+  color: var(--primary-white);
+  border: none;
+  font-size: 1.5rem;
+  margin-bottom: 5rem;
+  margin-top: 3rem;
+}
+.hero-stats {
+  display: flex;
+}
+.hero-stats-l {
+  display: flex;
+  border-right: 1.65px white solid;
+  margin-right: 2rem;
+}
+.hero-stats-r {
+  display: flex;
+}
+.hero-stats-h {
+  width: 12rem;
+  padding: 0 2rem 0 1rem;
+}
+.hero-stats-d {
+  font-size: 3rem;
+}
+span {
+  color: var(--primary-color);
+  font-weight: 900;
+}
+
+/* logos section */
+.logos {
+  background-color: var(--bg-grey);
+  height: 25vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* services */
+.services {
+  height: 95vh;
+}
+.services-top {
+  display: flex;
+  height: 50%;
+  align-items: center;
+  justify-content: center;
+}
+.st-l {
+  width: 50vw;
+  font-size: 2rem;
+  padding: 0 6rem 0 5rem;
+}
+.st-l span {
+  line-height: 1.5;
+}
+.st-r {
+  width: 50vw;
+  padding: 0 10rem 0 8rem;
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+.services-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  height: 50%;
+}
+.sb-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    border: 1px solid white;
+    background-color: var(--bg-grey);
+    width: 20vw;
+    height: 18vw;
+    line-height: 1.4;
+}
+.cloud-item{
+    align-self: start;
+}
+
+/* services */
+.card{
+    height: 95vh;
+    background-color: var(--bg-white);
+    background-image: url('./Assets/Photos/VCards.png');
+    background-position: center 100px ;
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: var(--bg-black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.card h1{
+    font-size: 3rem;
+    padding: 2rem 0;
+}
+.card p{
+    padding: 0 3rem;
+    opacity: .7;
+}
+.card-top{
+    width: 40vw;
+}
