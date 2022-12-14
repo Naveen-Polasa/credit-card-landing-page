@@ -44,6 +44,10 @@ body {
   font-size: 1rem;
   padding: 0.25rem 2rem;
 }
+.drop-down{
+    width: .7rem;
+    color: white;
+}
 
 /* hero section */
 .hero {
@@ -250,7 +254,7 @@ span {
 .signup-h{
     font-size: 3.4rem;
     width: 60vw;
-    padding: 0 3rem;
+    padding: 0 6rem;
     font-weight: 900;
     letter-spacing: -2px;
 }
@@ -277,4 +281,30 @@ span {
     display: flex;
     list-style: none;
     gap: 30px;
+}
+
+.effect1{
+  background: var(--primary-color);
+  opacity: .5;
+  width: 3.5rem;
+  height: 2rem;
+  position: absolute;
+  margin-left: .4rem;
+}
+.effect2{
+    background: var(--primary-color);
+    opacity: .7;
+    width: 2.4rem;
+    height: 1.6rem;
+    margin-top: .2rem;
+    position: absolute;
+}
+.effect-text{
+    position: absolute;
+    padding: 0 1.4rem;
+}
+.arrow{
+    width: 4rem;
+    height: 2rem;
+    margin-left: 12rem;
 }
