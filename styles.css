@@ -11,6 +11,7 @@
   --primary-white: #fff;
   --bg-black: #151515;
   --bg-grey: #292929;
+  --bg-grey-2: #4D4B49;
   --bg-white: #FCEFFB;
   --font: "Montserrat", sans-serif;
 }
@@ -180,4 +181,100 @@ span {
 }
 .card-top{
     width: 40vw;
+}
+
+.reviews{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reviews-top{
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45vw;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.reviews-t-h{
+    font-size: 2.9rem;
+    padding: 2rem 0;
+}
+.reviews-t-p{
+    padding: 0 9rem;
+    margin-bottom: 0;
+}
+.reviews-bottom{
+    height: 60vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 50px;
+    justify-items: center;
+    align-items: center;
+}
+
+.all-reviews{
+    width:30vw;
+    height: 28vh;
+    background: var(--bg-grey);
+    padding: 1rem;
+ }
+
+.all-reviews h3 {
+    margin: .65rem .65rem .65rem 0;
+    font-weight: 400;
+    opacity: .9;
+}
+.all-reviews h4{
+    opacity: .8;
+}
+.ar1{
+    background: var(--bg-grey-2);
+}
+/* signup */
+.signup{
+    height: 70vh;
+    background:url('./Assets/Photos/Diamond-right.png') left no-repeat, url('./Assets/Photos/Diamond-left.png') right no-repeat , url('./Assets/Photos/Rectangle\ 6774.png'), url('./Assets/Photos/Rectangle\ 6773.png');
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.signup span{
+    color: var(--bg-black);
+}
+.signup-h{
+    font-size: 3.4rem;
+    width: 60vw;
+    padding: 0 3rem;
+    font-weight: 900;
+    letter-spacing: -2px;
+}
+.signup button{
+    background-color: transparent;
+  color: var(--primary-white);
+  border: none;
+  font-size: 1.5rem;
+  margin-bottom: 5rem;
+  margin-top: 3rem;
+}
+
+/* footer */
+.footer{
+    height: 30vh;
+    margin-left: 90px;
+    display: flex;
+    align-items: center;
+}
+.footer-img{
+    margin-right: 250px;
+}
+.footer-ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
 }
