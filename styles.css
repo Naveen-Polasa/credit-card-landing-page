@@ -538,7 +538,7 @@ span {
   background: url("./Assets/Photos/Diamond-right.png") left no-repeat,
     url("./Assets/Photos/Diamond-left.png") right no-repeat,
     url("./Assets/Photos/Rectangle\ 6774.png"),
-    url("./Assets/Photos/Rectangle\ 6773.png");
+    url("./Assets/Photos/Rectangle\ 6773.png") ;
   background-size: auto, auto, cover;
   text-align: center;
   display: flex;
@@ -572,8 +572,8 @@ span {
     height: 75vh;
     background: url("./Assets/Photos/Diamond-right.png") left no-repeat,
       url("./Assets/Photos/Diamond-left.png") right no-repeat,
-      url("./Assets/Photos/Rectangle\ 6774.png"),
-      url("./Assets/Photos/Rectangle\ 6773.png");
+      url("./Assets/Photos/Rectangle\ 6774.png") no-repeat,
+      url("./Assets/Photos/Rectangle\ 6773.png") no-repeat;
   }
 
   .signup-h {
