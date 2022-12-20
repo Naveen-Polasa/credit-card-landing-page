@@ -25,16 +25,19 @@ body {
 }
 
 /* navbar */
+/* for mobile */
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin: 2rem auto;
+  justify-content: center;
+  margin: 1.5rem auto;
+  gap: 1.5rem;
+  flex-wrap: wrap;
 }
 .navbar-items {
   display: flex;
   list-style: none;
-  gap: 3rem;
+  gap: 2rem;
 }
 
 .nav-btn {
@@ -48,70 +51,204 @@ body {
     width: .7rem;
     color: white;
 }
+/* for tabs */
+@media only screen and (min-width: 768px) {
+  .navbar {
+  margin: 2rem 2rem;
+}
+}
+/* for desktop */
+@media only screen and (min-width: 992px) {
+  .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem auto;
+}
+.navbar-items {
+  gap: 3rem;
+}
+}
 
 /* hero section */
+/* for mobile */
+
 .hero {
   background-image: url("./Assets/Photos/backCards.png"),
     url("./Assets/Photos/frontCards.png");
-  background-position: 420px -80px, 620px 0px;
-  height: 95vh;
+  background-position: 20px 420px;
+  background-size: contain;
+  height: 105vh;
   background-repeat: no-repeat;
   margin-bottom: 3rem;
 }
 
 .hero-heading {
-  font-size: 5rem;
-  padding-right: 15rem;
-  padding-top: 3rem;
+  font-size: 2rem;
+  padding-right: 1rem;
+  padding-left: 2rem;
+      text-align: center;
 }
 .hero-heading > span {
   font-weight: 900;
 }
 .hero-p {
-  margin: 3rem 0;
-  padding-right: 50%;
-  font-size: 1.25rem;
+  margin: 1rem 1rem;
+  padding-left: 1rem;
+  font-size: 1.1rem;
   line-height: 2rem;
-  opacity: 0.6;
+  opacity: 0.6;    text-align: center;
 }
 .hero-btn {
   background-color: var(--bg-black);
   color: var(--primary-white);
   border: none;
-  font-size: 1.5rem;
-  margin-bottom: 5rem;
-  margin-top: 3rem;
+  font-size: 1.2rem;
+  margin-left: 22%;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
 }
 .hero-stats {
   display: flex;
+  flex-direction: column;
+margin-left: 22%;
+  row-gap: 1rem;
 }
 .hero-stats-l {
   display: flex;
-  border-right: 1.65px white solid;
-  margin-right: 2rem;
+  font-size: 1rem;
 }
 .hero-stats-r {
   display: flex;
 }
 .hero-stats-h {
+  font-size: 1.5rem;
   width: 12rem;
   padding: 0 2rem 0 1rem;
 }
 .hero-stats-d {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 span {
   color: var(--primary-color);
   font-weight: 900;
 }
 
+
+/* for tabs */
+@media only screen and (min-width: 700px) {
+.hero {
+  background-image: url("./Assets/Photos/backCards.png"),
+    url("./Assets/Photos/frontCards.png");
+    background-position: 20px 420px;
+  height: 150vh;
+}
+
+.hero-heading {
+  font-size: 3.4rem;
+  padding-top: 3rem;
+    padding-left: 2rem;
+text-align: start;
+    
+  }
+  .hero-p {
+    margin: 2rem 0 1rem 0;
+    padding: 0 2rem 0 2rem;
+    font-size: 1.25rem;
+  text-align: start;
+}
+.hero-btn {
+  margin-left: 32%;
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+}
+.hero-stats {
+  flex-direction: row;
+  margin-left: 13%;
+}
+.hero-stats-l {
+  border-right: 1.65px white solid;
+  margin-right: 0;
+    margin-right: 2rem;
+}
+.hero-stats-d {
+  font-size: 3rem;
+}
+
+} 
+
+
+/* for desktop */
+
+@media only screen and (min-width: 992px) {
+.hero {
+  background-position: 420px -80px, 620px 0px;
+  height: 95vh;
+}
+
+.hero-heading {
+  font-size: 5rem;
+  padding-right: 15rem;
+  padding-top: 3rem;
+  padding-left: 0;
+}
+.hero-p {
+  margin: 3rem 0;
+  padding-right: 50%;
+  margin-left: 0;
+  padding-left: 0;
+}
+.hero-btn {
+  margin-left: 0;
+  font-size: 1.5rem;
+  margin-bottom: 5rem;
+  margin-top: 3rem;
+}
+.hero-stats {
+  flex-direction: row;
+  margin-left: 0;
+}
+.hero-stats-l {
+  border-right: 1.65px white solid;
+  margin-right: 0;
+    margin-right: 2rem;
+}
+.hero-stats-d {
+  font-size: 3rem;
+}
+}
+
+
 /* logos section */
+/* for mobile */
+
 .logos {
   background-color: var(--bg-grey);
-  height: 25vh;
-  display: flex;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  padding: 2rem 3rem;
+  justify-self: center;
   align-items: center;
+}
+.logo{
+  text-align: center;
+}
+/* for tabs */
+@media only screen and (min-width: 600px) {
+.logos {
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+}
+}
+/* for desktop */
+@media only screen and (min-width: 992px) {
+  .logos {
+  grid-template-columns: repeat(5, 1fr);
+  padding: 4.4rem 3rem;
+  align-items: center;
+}
 }
 
 /* services */
