@@ -741,3 +741,16 @@ a {
     border-radius: 45%;
   }
 }
+
+.footer-end{
+  text-align: center;
+  margin: 1.5rem;
+}
+
+a:hover{
+  color: var(--primary-color);
+}
+a{
+  text-decoration: none;
+  color: white;
+}
